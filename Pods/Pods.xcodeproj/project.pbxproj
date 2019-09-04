@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = E0947F7804C6387890E85B00E14F35E6 /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-iOS-SDK" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = "GoogleAds-IMA-iOS-SDK";
-		};
 		78D7420028AA6BE7CBA9A3DC7529E196 /* Mux-Stats-Core */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 4D699F94BAB680F2DB077EB4B62736F5 /* Build configuration list for PBXAggregateTarget "Mux-Stats-Core" */;
@@ -37,65 +28,53 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		351D848888AE3AB804787CDAF39659F0 /* Pods-video-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB115BF687865FF0D3454D4864CDC3 /* Pods-video-demo-dummy.m */; };
-		56715B70356C34150C9258F797008E03 /* Pods-video-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186EDF263E3BFF0088BEFDB1AFAB03D /* Pods-video-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B055DC3B8B41942714E9B0087F098071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		242CF73B9721B94445A2F714B9AE2ECC /* Pods-video-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EB115BF687865FF0D3454D4864CDC3 /* Pods-video-demo-dummy.m */; };
+		7573A59426A9EC4A4438A6ECE77E566E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A368A229C07122FC0DA1651035699E65 /* Pods-video-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6186EDF263E3BFF0088BEFDB1AFAB03D /* Pods-video-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C7A03ABCA27C94A433F7F49E515FDB23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A628F9FECD1E366F0AF90449C4E8B0A;
-			remoteInfo = "Mux-Stats-AVPlayer";
-		};
-		C7BC1E32F75516BC8C3FFE92217E8E50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
-			remoteInfo = "GoogleAds-IMA-iOS-SDK";
-		};
-		EA27A98D222F5E8F3AD193FF9FB0FEAD /* PBXContainerItemProxy */ = {
+		B5FE2D1AD778002B9FF3348051A0B63A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 78D7420028AA6BE7CBA9A3DC7529E196;
 			remoteInfo = "Mux-Stats-Core";
 		};
+		D7F11222304E0502A39A7BFA14DAA296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A628F9FECD1E366F0AF90449C4E8B0A;
+			remoteInfo = "Mux-Stats-AVPlayer";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04EB115BF687865FF0D3454D4864CDC3 /* Pods-video-demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-video-demo-dummy.m"; sourceTree = "<group>"; };
+		13BEFB7F6C931A406865E986B64ACF97 /* MuxCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MuxCore.framework; path = Frameworks/iOS/fat/MuxCore.framework; sourceTree = "<group>"; };
+		22BD28AD84DAE776D3F7C62067C5F424 /* Mux-Stats-Core.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mux-Stats-Core.xcconfig"; sourceTree = "<group>"; };
 		25BD19069ADF39F7AF1A6453964A7E59 /* Pods-video-demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-video-demo-frameworks.sh"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		32159699B27497AEB9D201C22418A74C /* GoogleAds-IMA-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
 		394D7DF1072D15394332A97D6E4DD63D /* Pods-video-demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-video-demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3C65B92F2BEB64B6A8A8EDAA6E794834 /* Pods-video-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-video-demo-Info.plist"; sourceTree = "<group>"; };
 		4044A4A698B4190E63A85AFB5039EAF0 /* Pods-video-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-video-demo.release.xcconfig"; sourceTree = "<group>"; };
-		4E02D094B7BC898A2858553FF8471E26 /* Mux-Stats-AVPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "Mux-Stats-AVPlayer.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		48A894308E4A7465C7168790ABF34603 /* Mux-Stats-AVPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mux-Stats-AVPlayer.xcconfig"; sourceTree = "<group>"; };
 		6186EDF263E3BFF0088BEFDB1AFAB03D /* Pods-video-demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-video-demo-umbrella.h"; sourceTree = "<group>"; };
 		6A8EF1F55BAEC81BAEC34551D73FB413 /* Pods-video-demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-video-demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		8193D82071D0317810DC2EB76C7F19F7 /* MUXSDKStats.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MUXSDKStats.framework; path = Frameworks/iOS/fat/MUXSDKStats.framework; sourceTree = "<group>"; };
 		924ACE4FFECDC8DA2767DF6BDF4B5604 /* Pods-video-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-video-demo.modulemap"; sourceTree = "<group>"; };
-		9CCBC7DF992BC8239281F22FB99DBDDD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC2FDEA16C89FD35BD3C3A966DF28351 /* Pods_video_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_video_demo.framework; path = "Pods-video-demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD0A372D6FD2B93E47C6767B503D78BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		C5F096C9D04FA610E7AD1256AD3BE867 /* MUXSDKStats.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MUXSDKStats.framework; path = Frameworks/iOS/fat/MUXSDKStats.framework; sourceTree = "<group>"; };
 		C9FE4D01CE77E531CD1628788F52D6CD /* Pods-video-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-video-demo.debug.xcconfig"; sourceTree = "<group>"; };
-		CAA639206E8D3474317E9546D7B45DFC /* MuxCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MuxCore.framework; path = Frameworks/iOS/fat/MuxCore.framework; sourceTree = "<group>"; };
-		D0ED2097804AFF7721BA9301BACBC222 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
-		DD113EAD7BC17712B9C1F99A90B02713 /* Mux-Stats-Core.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mux-Stats-Core.xcconfig"; sourceTree = "<group>"; };
-		ED71A1BB5BEB56D3B6B0256D97F56E87 /* Mux-Stats-AVPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mux-Stats-AVPlayer.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		70217510794B932EB8D18725AEDC4B94 /* Frameworks */ = {
+		1FE3FBF200A557EB2EAE885E55357440 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B055DC3B8B41942714E9B0087F098071 /* Foundation.framework in Frameworks */,
+				7573A59426A9EC4A4438A6ECE77E566E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,64 +98,10 @@
 			path = "Target Support Files/Pods-video-demo";
 			sourceTree = "<group>";
 		};
-		0BFAD819B93096B6F095BCC9BA20F996 /* GoogleAds-IMA-iOS-SDK */ = {
+		3BF7C76E0E6E200855618755CE8CE305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5CF826869043649E4BD9C61C40AC7E8F /* Frameworks */,
-				5B9F1A2ADE371E4FBFEBD0F7F1AF3C4A /* Support Files */,
-			);
-			name = "GoogleAds-IMA-iOS-SDK";
-			path = "GoogleAds-IMA-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		2CE5DFA97916BB9AB3AE96DC2618BB46 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6D5AD635097676B1BE58ECDF6C52C2D4 /* Mux-Stats-AVPlayer */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		3680A27E493BF8FD40055BB83AD9DA58 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DD113EAD7BC17712B9C1F99A90B02713 /* Mux-Stats-Core.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Mux-Stats-Core";
-			sourceTree = "<group>";
-		};
-		3BAB154391A217111130D7468D5D9E1E /* Mux-Stats-Core */ = {
-			isa = PBXGroup;
-			children = (
-				86E503D409B245DE52F452592A7AD8B0 /* Frameworks */,
-				3680A27E493BF8FD40055BB83AD9DA58 /* Support Files */,
-			);
-			name = "Mux-Stats-Core";
-			path = "Mux-Stats-Core";
-			sourceTree = "<group>";
-		};
-		5B9F1A2ADE371E4FBFEBD0F7F1AF3C4A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				32159699B27497AEB9D201C22418A74C /* GoogleAds-IMA-iOS-SDK.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleAds-IMA-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		5CF826869043649E4BD9C61C40AC7E8F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D0ED2097804AFF7721BA9301BACBC222 /* GoogleInteractiveMediaAds.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		62519E91C80A08D3D8607719FA540A71 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C5F096C9D04FA610E7AD1256AD3BE867 /* MUXSDKStats.framework */,
+				8193D82071D0317810DC2EB76C7F19F7 /* MUXSDKStats.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,40 +114,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6C9B77CED856EBCCC68F2CAF133C27F7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ED71A1BB5BEB56D3B6B0256D97F56E87 /* Mux-Stats-AVPlayer.xcconfig */,
-			);
-			name = "Support Files";
-			path = "apps/video-demo/Pods/Target Support Files/Mux-Stats-AVPlayer";
-			sourceTree = "<group>";
-		};
-		6D5AD635097676B1BE58ECDF6C52C2D4 /* Mux-Stats-AVPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				62519E91C80A08D3D8607719FA540A71 /* Frameworks */,
-				FCCCF9BB7AEC3BFF44FD5A711BF088A4 /* Pod */,
-				6C9B77CED856EBCCC68F2CAF133C27F7 /* Support Files */,
-			);
-			name = "Mux-Stats-AVPlayer";
-			path = "/Users/dylanjhaveri/code/@muxinc/mux-stats-sdk-avplayer";
-			sourceTree = "<absolute>";
-		};
-		86E503D409B245DE52F452592A7AD8B0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CAA639206E8D3474317E9546D7B45DFC /* MuxCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8A3A77A2DB2C93EFBCA49BDBF3435665 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				AC2FDEA16C89FD35BD3C3A966DF28351 /* Pods_video_demo.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		93C76D5315DD88CAD5CA8014E1298AF5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				48A894308E4A7465C7168790ABF34603 /* Mux-Stats-AVPlayer.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Mux-Stats-AVPlayer";
+			sourceTree = "<group>";
+		};
+		B674C871BE74CAA7FEC302D0F98E583A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCA9221915B65400BF75AD51AA53E1F3 /* Mux-Stats-AVPlayer */,
+				F6F9656EBD2EB65AD102A71F869CA44A /* Mux-Stats-Core */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C009E9EBECAD0A89A21E72D8A3B36BB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13BEFB7F6C931A406865E986B64ACF97 /* MuxCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -233,25 +156,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		CCA9221915B65400BF75AD51AA53E1F3 /* Mux-Stats-AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3BF7C76E0E6E200855618755CE8CE305 /* Frameworks */,
+				93C76D5315DD88CAD5CA8014E1298AF5 /* Support Files */,
+			);
+			name = "Mux-Stats-AVPlayer";
+			path = "Mux-Stats-AVPlayer";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2CE5DFA97916BB9AB3AE96DC2618BB46 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				D1E36CA5719523792A7FB02A89841FAE /* Pods */,
+				B674C871BE74CAA7FEC302D0F98E583A /* Pods */,
 				8A3A77A2DB2C93EFBCA49BDBF3435665 /* Products */,
 				680272D988F110A5C6DA8AD07EB2C4C5 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D1E36CA5719523792A7FB02A89841FAE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0BFAD819B93096B6F095BCC9BA20F996 /* GoogleAds-IMA-iOS-SDK */,
-				3BAB154391A217111130D7468D5D9E1E /* Mux-Stats-Core */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -262,24 +185,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FCCCF9BB7AEC3BFF44FD5A711BF088A4 /* Pod */ = {
+		E5C0893A1CF32394A13FCE055D028704 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BD0A372D6FD2B93E47C6767B503D78BE /* LICENSE */,
-				4E02D094B7BC898A2858553FF8471E26 /* Mux-Stats-AVPlayer.podspec */,
-				9CCBC7DF992BC8239281F22FB99DBDDD /* README.md */,
+				22BD28AD84DAE776D3F7C62067C5F424 /* Mux-Stats-Core.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "../Target Support Files/Mux-Stats-Core";
+			sourceTree = "<group>";
+		};
+		F6F9656EBD2EB65AD102A71F869CA44A /* Mux-Stats-Core */ = {
+			isa = PBXGroup;
+			children = (
+				C009E9EBECAD0A89A21E72D8A3B36BB8 /* Frameworks */,
+				E5C0893A1CF32394A13FCE055D028704 /* Support Files */,
+			);
+			name = "Mux-Stats-Core";
+			path = "Mux-Stats-Core";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8956AF83E0095D10854B146A23E8AED6 /* Headers */ = {
+		8D443577E035B37E5AFE9978B06A2FB1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56715B70356C34150C9258F797008E03 /* Pods-video-demo-umbrella.h in Headers */,
+				A368A229C07122FC0DA1651035699E65 /* Pods-video-demo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,19 +220,18 @@
 /* Begin PBXNativeTarget section */
 		7D49EBD6F2C35B4DE248046DA1EC7D2E /* Pods-video-demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8AA608DD0BA5202C813291C4850B1899 /* Build configuration list for PBXNativeTarget "Pods-video-demo" */;
+			buildConfigurationList = 777FB23E963D351CF8D8AC3F6B382315 /* Build configuration list for PBXNativeTarget "Pods-video-demo" */;
 			buildPhases = (
-				8956AF83E0095D10854B146A23E8AED6 /* Headers */,
-				6EFBFF0791BF1DA52B9CDE7DC9B72041 /* Sources */,
-				70217510794B932EB8D18725AEDC4B94 /* Frameworks */,
-				767A4AC1C3C55DA0E93E29B342A70611 /* Resources */,
+				8D443577E035B37E5AFE9978B06A2FB1 /* Headers */,
+				2C8B9E969D6A2F65D019991D4BDC8C32 /* Sources */,
+				1FE3FBF200A557EB2EAE885E55357440 /* Frameworks */,
+				71BD25251890EE710E1DACF9C1377819 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				00AFC072C80C578A06E59436B1D9B76D /* PBXTargetDependency */,
-				9149CECFFE1D76EC213777936EE57ECE /* PBXTargetDependency */,
-				00A7D67A722B714DE9116A8273103DA8 /* PBXTargetDependency */,
+				5E740FAD5C34ACEE4D5C60D269166409 /* PBXTargetDependency */,
+				9762E52E82BEE38C8271DE4A4CE9DD00 /* PBXTargetDependency */,
 			);
 			name = "Pods-video-demo";
 			productName = "Pods-video-demo";
@@ -328,7 +259,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */,
 				8A628F9FECD1E366F0AF90449C4E8B0A /* Mux-Stats-AVPlayer */,
 				78D7420028AA6BE7CBA9A3DC7529E196 /* Mux-Stats-Core */,
 				7D49EBD6F2C35B4DE248046DA1EC7D2E /* Pods-video-demo */,
@@ -337,7 +267,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		767A4AC1C3C55DA0E93E29B342A70611 /* Resources */ = {
+		71BD25251890EE710E1DACF9C1377819 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,41 +277,70 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6EFBFF0791BF1DA52B9CDE7DC9B72041 /* Sources */ = {
+		2C8B9E969D6A2F65D019991D4BDC8C32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				351D848888AE3AB804787CDAF39659F0 /* Pods-video-demo-dummy.m in Sources */,
+				242CF73B9721B94445A2F714B9AE2ECC /* Pods-video-demo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00A7D67A722B714DE9116A8273103DA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Mux-Stats-Core";
-			target = 78D7420028AA6BE7CBA9A3DC7529E196 /* Mux-Stats-Core */;
-			targetProxy = EA27A98D222F5E8F3AD193FF9FB0FEAD /* PBXContainerItemProxy */;
-		};
-		00AFC072C80C578A06E59436B1D9B76D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GoogleAds-IMA-iOS-SDK";
-			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
-			targetProxy = C7BC1E32F75516BC8C3FFE92217E8E50 /* PBXContainerItemProxy */;
-		};
-		9149CECFFE1D76EC213777936EE57ECE /* PBXTargetDependency */ = {
+		5E740FAD5C34ACEE4D5C60D269166409 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Mux-Stats-AVPlayer";
 			target = 8A628F9FECD1E366F0AF90449C4E8B0A /* Mux-Stats-AVPlayer */;
-			targetProxy = C7A03ABCA27C94A433F7F49E515FDB23 /* PBXContainerItemProxy */;
+			targetProxy = D7F11222304E0502A39A7BFA14DAA296 /* PBXContainerItemProxy */;
+		};
+		9762E52E82BEE38C8271DE4A4CE9DD00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mux-Stats-Core";
+			target = 78D7420028AA6BE7CBA9A3DC7529E196 /* Mux-Stats-Core */;
+			targetProxy = B5FE2D1AD778002B9FF3348051A0B63A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		003BAFAC4B371B82D375D0A43C9ED754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FE4D01CE77E531CD1628788F52D6CD /* Pods-video-demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-video-demo/Pods-video-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-video-demo/Pods-video-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		250546A0EECF08E3BA1749386592514D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD113EAD7BC17712B9C1F99A90B02713 /* Mux-Stats-Core.xcconfig */;
+			baseConfigurationReference = 22BD28AD84DAE776D3F7C62067C5F424 /* Mux-Stats-Core.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -453,42 +412,7 @@
 			};
 			name = Release;
 		};
-		41A0CC31C14C54EDBE886D77789C5125 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9FE4D01CE77E531CD1628788F52D6CD /* Pods-video-demo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-video-demo/Pods-video-demo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-video-demo/Pods-video-demo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		564FCBABDBF07EEF6ABFA6B4DCA3E466 /* Release */ = {
+		621E7F9C7BDE7C945F9D2008D2520133 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4044A4A698B4190E63A85AFB5039EAF0 /* Pods-video-demo.release.xcconfig */;
 			buildSettings = {
@@ -523,20 +447,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		6FA326E0A4DC4328A2585325784C167D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32159699B27497AEB9D201C22418A74C /* GoogleAds-IMA-iOS-SDK.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		959DAB4EC1BE4ADE4B22644C3E349521 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -604,7 +514,7 @@
 		};
 		D03333329C8032F198176EA5B999A62F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED71A1BB5BEB56D3B6B0256D97F56E87 /* Mux-Stats-AVPlayer.xcconfig */;
+			baseConfigurationReference = 48A894308E4A7465C7168790ABF34603 /* Mux-Stats-AVPlayer.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -619,7 +529,7 @@
 		};
 		D6E14201F9CA90E5817A5CCDF25FCB5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD113EAD7BC17712B9C1F99A90B02713 /* Mux-Stats-Core.xcconfig */;
+			baseConfigurationReference = 22BD28AD84DAE776D3F7C62067C5F424 /* Mux-Stats-Core.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -632,24 +542,9 @@
 			};
 			name = Release;
 		};
-		E9B4070B426B9277E512EF7D3B792575 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32159699B27497AEB9D201C22418A74C /* GoogleAds-IMA-iOS-SDK.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		EE834A3DA043C530351B6B32E8C6F003 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED71A1BB5BEB56D3B6B0256D97F56E87 /* Mux-Stats-AVPlayer.xcconfig */;
+			baseConfigurationReference = 48A894308E4A7465C7168790ABF34603 /* Mux-Stats-AVPlayer.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -691,20 +586,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8AA608DD0BA5202C813291C4850B1899 /* Build configuration list for PBXNativeTarget "Pods-video-demo" */ = {
+		777FB23E963D351CF8D8AC3F6B382315 /* Build configuration list for PBXNativeTarget "Pods-video-demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41A0CC31C14C54EDBE886D77789C5125 /* Debug */,
-				564FCBABDBF07EEF6ABFA6B4DCA3E466 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E0947F7804C6387890E85B00E14F35E6 /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-iOS-SDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6FA326E0A4DC4328A2585325784C167D /* Debug */,
-				E9B4070B426B9277E512EF7D3B792575 /* Release */,
+				003BAFAC4B371B82D375D0A43C9ED754 /* Debug */,
+				621E7F9C7BDE7C945F9D2008D2520133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
