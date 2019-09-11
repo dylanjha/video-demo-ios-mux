@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		78D7420028AA6BE7CBA9A3DC7529E196 /* Mux-Stats-Core */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4D699F94BAB680F2DB077EB4B62736F5 /* Build configuration list for PBXAggregateTarget "Mux-Stats-Core" */;
+			buildConfigurationList = 58BB8F9430E15506669FA6A271ED11A1 /* Build configuration list for PBXAggregateTarget "Mux-Stats-Core" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -18,10 +18,11 @@
 		};
 		8A628F9FECD1E366F0AF90449C4E8B0A /* Mux-Stats-AVPlayer */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 3A158E1E5FE36E574474162F87C91BF5 /* Build configuration list for PBXAggregateTarget "Mux-Stats-AVPlayer" */;
+			buildConfigurationList = A74AD33A16ED04790C3131C3191DBC97 /* Build configuration list for PBXAggregateTarget "Mux-Stats-AVPlayer" */;
 			buildPhases = (
 			);
 			dependencies = (
+				B10BAA4E0861A6EFB4128DBEE53CF988 /* PBXTargetDependency */,
 			);
 			name = "Mux-Stats-AVPlayer";
 		};
@@ -34,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1057D68825BFCD5F9C2513DDEDF53984 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D7420028AA6BE7CBA9A3DC7529E196;
+			remoteInfo = "Mux-Stats-Core";
+		};
 		B5FE2D1AD778002B9FF3348051A0B63A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -300,6 +308,12 @@
 			target = 78D7420028AA6BE7CBA9A3DC7529E196 /* Mux-Stats-Core */;
 			targetProxy = B5FE2D1AD778002B9FF3348051A0B63A /* PBXContainerItemProxy */;
 		};
+		B10BAA4E0861A6EFB4128DBEE53CF988 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mux-Stats-Core";
+			target = 78D7420028AA6BE7CBA9A3DC7529E196 /* Mux-Stats-Core */;
+			targetProxy = 1057D68825BFCD5F9C2513DDEDF53984 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -338,7 +352,7 @@
 			};
 			name = Debug;
 		};
-		250546A0EECF08E3BA1749386592514D /* Debug */ = {
+		1C9F38780B41509AFBC5834405A1DCD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22BD28AD84DAE776D3F7C62067C5F424 /* Mux-Stats-Core.xcconfig */;
 			buildSettings = {
@@ -349,8 +363,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		2F55A3566E4E4FC936EAEAB624C33C12 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -411,6 +426,49 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		341FF8B64314F100DC8375FD7CB54DEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A894308E4A7465C7168790ABF34603 /* Mux-Stats-AVPlayer.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AA0AB88649F8D504C777BF3114D93B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A894308E4A7465C7168790ABF34603 /* Mux-Stats-AVPlayer.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B714444DB845847E4F7FC23A52CC3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22BD28AD84DAE776D3F7C62067C5F424 /* Mux-Stats-Core.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		621E7F9C7BDE7C945F9D2008D2520133 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -512,62 +570,9 @@
 			};
 			name = Debug;
 		};
-		D03333329C8032F198176EA5B999A62F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48A894308E4A7465C7168790ABF34603 /* Mux-Stats-AVPlayer.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D6E14201F9CA90E5817A5CCDF25FCB5D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22BD28AD84DAE776D3F7C62067C5F424 /* Mux-Stats-Core.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EE834A3DA043C530351B6B32E8C6F003 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48A894308E4A7465C7168790ABF34603 /* Mux-Stats-AVPlayer.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A158E1E5FE36E574474162F87C91BF5 /* Build configuration list for PBXAggregateTarget "Mux-Stats-AVPlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE834A3DA043C530351B6B32E8C6F003 /* Debug */,
-				D03333329C8032F198176EA5B999A62F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -577,11 +582,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D699F94BAB680F2DB077EB4B62736F5 /* Build configuration list for PBXAggregateTarget "Mux-Stats-Core" */ = {
+		58BB8F9430E15506669FA6A271ED11A1 /* Build configuration list for PBXAggregateTarget "Mux-Stats-Core" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				250546A0EECF08E3BA1749386592514D /* Debug */,
-				D6E14201F9CA90E5817A5CCDF25FCB5D /* Release */,
+				5B714444DB845847E4F7FC23A52CC3B0 /* Debug */,
+				1C9F38780B41509AFBC5834405A1DCD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -591,6 +596,15 @@
 			buildConfigurations = (
 				003BAFAC4B371B82D375D0A43C9ED754 /* Debug */,
 				621E7F9C7BDE7C945F9D2008D2520133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A74AD33A16ED04790C3131C3191DBC97 /* Build configuration list for PBXAggregateTarget "Mux-Stats-AVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA0AB88649F8D504C777BF3114D93B5 /* Debug */,
+				341FF8B64314F100DC8375FD7CB54DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

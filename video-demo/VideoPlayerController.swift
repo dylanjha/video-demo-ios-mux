@@ -3,6 +3,7 @@ import AVKit
 import AVFoundation
 import MuxCore
 import MUXSDKStats
+//import MUXSDKImaListener
 
 class VideoPlayerController: AVPlayerViewController {
     var video: Dictionary<String, String>! = nil
@@ -26,8 +27,11 @@ class VideoPlayerController: AVPlayerViewController {
         cvd.videoIsLive = false;
         cvd.videoTitle = video["title"]!
         cvd.videoStreamType = "mp4"
-        MUXSDKStats.monitorAVPlayerViewController(self, withPlayerName: playName, playerData: cpd!, videoData: cvd);
-
+        let playerBinding = MUXSDKStats.monitorAVPlayerViewController(self, withPlayerName: playName, playerData: cpd!, videoData: cvd);
+        if (playerBinding != nil) {
+//            print("debug about to MUXSDKImaListener.init")
+//            MuxImaListener.init(withPlayerBinding: playerBinding!)
+        }
         timeObserverToken = player!.addPeriodicTimeObserver(forInterval: CMTime(seconds: 0.5,
                                                                                preferredTimescale: CMTimeScale(NSEC_PER_SEC)),
                                                            queue: DispatchQueue.main) { time in
