@@ -1,0 +1,6 @@
+framework module MuxCore {
+  umbrella header "Mux-Stats-Core-umbrella.h"
+
+  export *
+  module * { export * }
+}

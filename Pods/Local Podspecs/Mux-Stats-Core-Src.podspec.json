@@ -1,0 +1,38 @@
+{
+  "name": "Mux-Stats-Core-Src",
+  "module_name": "MuxCore",
+  "version": "2.0.0",
+  "source": {
+    "git": "https://github.com/muxinc/mux-stats-sdk-objc.git",
+    "tag": "v2.0.0"
+  },
+  "summary": "The Mux Stats SDK",
+  "description": "The Mux stats SDK provides performance analytics and QoS monitoring for video.",
+  "homepage": "https://mux.com",
+  "social_media_url": "https://twitter.com/muxhq",
+  "license": "Apache 2.0",
+  "authors": {
+    "Mux": "ios-sdk@mux.com"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "tvos": "9.0"
+  },
+  "ios": {
+    "source_files": "MuxCore/MuxCore/**/*.{h,m}",
+    "frameworks": [
+      "AVKit",
+      "AVFoundation"
+    ]
+  },
+  "tvos": {
+    "source_files": [
+      "MuxCore/MuxCore/**/*.{h,m}",
+      "MuxCore/MuxCoreTv/**/*.{h,m}"
+    ],
+    "frameworks": [
+      "AVKit",
+      "AVFoundation"
+    ]
+  }
+}

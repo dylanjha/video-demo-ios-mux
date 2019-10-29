@@ -1,9 +1,7 @@
 import UIKit
 import AVKit
 import AVFoundation
-import MuxCore
 import MUXSDKStats
-//import MUXSDKImaListener
 
 class VideoPlayerController: AVPlayerViewController {
     var video: Dictionary<String, String>! = nil
@@ -19,19 +17,18 @@ class VideoPlayerController: AVPlayerViewController {
         let videoUrl = video["url"]!
         let url = URL(string: videoUrl)
         player = AVPlayer(url: url!)
+//        player = AVPlayer()
 
         let cpd = MUXSDKCustomerPlayerData(environmentKey: "img");
         cpd?.playerName = "AVPlayer"
-        cpd?.environmentKey = "YOUR_ENVIRONMENT_KEY"
+        cpd?.environmentKey = "cqtqt2jfbq235huvso0djbn56"
         let cvd = MUXSDKCustomerVideoData();
         cvd.videoIsLive = false;
         cvd.videoTitle = video["title"]!
         cvd.videoStreamType = "mp4"
-        let playerBinding = MUXSDKStats.monitorAVPlayerViewController(self, withPlayerName: playName, playerData: cpd!, videoData: cvd);
-        if (playerBinding != nil) {
-//            print("debug about to MUXSDKImaListener.init")
-//            MuxImaListener.init(withPlayerBinding: playerBinding!)
-        }
+//        let asset = AVAsset(url: url!)
+//        player!.currentItem = AVPlayerItem(asset: asset)
+        let _ = MUXSDKStats.monitorAVPlayerViewController(self, withPlayerName: playName, playerData: cpd!, videoData: cvd);
         timeObserverToken = player!.addPeriodicTimeObserver(forInterval: CMTime(seconds: 0.5,
                                                                                preferredTimescale: CMTimeScale(NSEC_PER_SEC)),
                                                            queue: DispatchQueue.main) { time in
@@ -41,6 +38,11 @@ class VideoPlayerController: AVPlayerViewController {
         playComplete = NotificationCenter.default.addObserver(self, selector: #selector(self.playerDidFinishPlaying(note:)),
                                                name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player!.currentItem)
         player!.play()
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+////            MUXSDKStats.videoChange(forPlayer: self.playName, with: cvd)
+//            let avPlayerItem = AVPlayerItem(url: url!)
+//            self.player?.replaceCurrentItem(with: avPlayerItem)
+//        }
     }
 
     override func didReceiveMemoryWarning() {

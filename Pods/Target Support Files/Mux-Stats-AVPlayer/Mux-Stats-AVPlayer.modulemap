@@ -1,0 +1,6 @@
+framework module MUXSDKStats {
+  umbrella header "Mux-Stats-AVPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -65,7 +65,7 @@ FOUNDATION_EXPORT
  @param       name A name for this instance of the player
  @param       playerData A MUXSDKCustomerPlayerData object with player metadata
  @param       videoData A MUXSDKCustomerVideoData object with video metadata
- @return      an instance of MUXSDKAVPlayerLayerBinding or nill
+ @return      an instance of MUXSDKAVPlayerLayerBinding or null
  @discussion  Use this method to start a Mux player monitor on the given AVPlayerLayer. The player must have a name which is globally unique. The config provided should match the specifications in the Mux docs at https://docs.mux.com
  */
 + (MUXSDKPlayerBinding *_Nullable)monitorAVPlayerLayer:(nonnull AVPlayerLayer *)player withPlayerName:(nonnull NSString *)name playerData:(nonnull MUXSDKCustomerPlayerData *)playerData videoData:(nullable MUXSDKCustomerVideoData *)videoData;
@@ -105,5 +105,15 @@ FOUNDATION_EXPORT
  @discussion  Use this method to signal that the player is now playing a differnt video of a playlist, or a different program of a live stream. The player name provided must been passed as the name in a monitorPlayer:withPlayerName:andConfig: call. The config provided should match the specifications in the Mux docs at https://docs.mux.com and should include all desired keys, not just those keys that are specific to this video. If the name of the player provided was not previously initialized, an exception will be raised.
  */
 + (void)programChangeForPlayer:(nonnull NSString *)name withVideoData:(nullable MUXSDKCustomerVideoData *)videoData;
+
+/*!
+ @method      updateCustomerData:forPlayer:withPlayerData:withVideoData
+ @abstract    allows videoData to be set or updated for the player
+ @param       name The name of the player to update
+ @param       playerData A MUXSDKCustomerPlayerData object with video metadata
+ @param       videoData A MUXSDKCustomerVideoData object with video metadata
+ @discussion  Use this method after you have already initialized the Mux SDK at any time before the player has been destroyed. Pass in either videoData or playerData.
+ */
++ (void)updateCustomerDataForPlayer:(nonnull NSString *)name withPlayerData:(nullable MUXSDKCustomerPlayerData *)playerData withVideoData:(nullable MUXSDKCustomerVideoData *)videoData;
 
 @end

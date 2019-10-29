@@ -1,9 +1,9 @@
 {
   "name": "Mux-Stats-AVPlayer",
-  "version": "0.1.5",
+  "version": "1.1.0",
   "source": {
     "git": "https://github.com/muxinc/mux-stats-sdk-avplayer.git",
-    "tag": "v0.1.5"
+    "tag": "v1.1.0"
   },
   "summary": "The Mux Stats SDK",
   "description": "The Mux stats SDK connect with AVPlayer to performance analytics and QoS monitoring for video.",
